@@ -15,7 +15,7 @@ public class ResultsPage extends BasePage{
 	By editMobileSearch = By.xpath("//*[@class='edit-search-icon icon-pencil-blue']");
 	By subSearch = By.xpath("//button[contains(@class, 'edit-search-submit')][@name='search']");
 	
-	public void editSearch(RemoteWebDriver driver){
+	public void editSearch(RemoteWebDriver driver, String browser){
 		WebElement edit = null;
 		if (browser.equals("OS")){
 			edit = staleProtect(driver, editMobileSearch);
