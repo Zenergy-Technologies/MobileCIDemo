@@ -12,10 +12,18 @@ public class ResultsPage extends BasePage{
 	By returnDateTxt = By.id("ReturnDate"); 	
 	By searchBtn = By.id("flightBookingSubmit");
 	By editSearch = By.xpath("//*[contains(@class, 'btn-show-new-search')]");
+	By editMobileSearch = By.xpath("//*[@class='edit-search-icon icon-pencil-blue']");
 	By subSearch = By.xpath("//button[contains(@class, 'edit-search-submit')][@name='search']");
 	
 	public void editSearch(RemoteWebDriver driver){
-		WebElement edit = staleProtect(driver, editSearch);
+		WebElement edit = null;
+		if (browser.equals("OS")){
+			edit = staleProtect(driver, editSearch);
+		}
+		else{
+			edit = staleProtect(driver, editSearch);
+		}
+		
 		edit.click();
 	}
 	public void editDates(RemoteWebDriver driver){
