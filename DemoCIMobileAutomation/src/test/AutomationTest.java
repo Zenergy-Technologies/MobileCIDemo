@@ -39,7 +39,7 @@ public class AutomationTest {
 	@Test
 	@Parameters("browser")
 	public void automationScript(String browser) throws IOException{
-	
+		browser = "Chrome";
 		System.out.println("Start test");
 		driverSetup(browser);
 		home.navigateSearchEngine(driver, "https://www.google.com/");
