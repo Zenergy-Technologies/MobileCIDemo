@@ -18,6 +18,7 @@ public class ResultsPage extends BasePage{
 	public void editSearch(RemoteWebDriver driver, String browser){
 		WebElement edit = null;
 		if (browser.equals("OS")){
+			System.out.println(browser);
 			edit = staleProtect(driver, editMobileSearch);
 		}
 		else{
