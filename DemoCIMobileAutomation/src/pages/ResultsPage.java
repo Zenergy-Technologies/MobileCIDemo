@@ -11,7 +11,7 @@ public class ResultsPage extends BasePage{
 	By departDateTxt = By.id("DepartDate");
 	By returnDateTxt = By.id("ReturnDate"); 	
 	By searchBtn = By.id("flightBookingSubmit");
-	By editSearch = By.xpath("//button[contains(@class, 'btn-show-new-search')]");
+	By editSearch = By.xpath("//*[contains(@class, 'btn-show-new-search')]");
 	By subSearch = By.xpath("//button[contains(@class, 'edit-search-submit')][@name='search']");
 	
 	public void editSearch(RemoteWebDriver driver){
