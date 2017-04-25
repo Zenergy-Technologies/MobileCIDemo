@@ -29,7 +29,7 @@ public class SetUp {
                         capabilities);
         
         // implicit wait set to 30 due to slowness and timeout issues
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
         
         //Return the driver for other tests
         return driver;   
@@ -42,7 +42,7 @@ public class SetUp {
 		driver = new FirefoxDriver(capabilities);
 		// Add an implicit wait to the driver
 		driver.manage().timeouts().implicitlyWait(
-		        10, TimeUnit.SECONDS);
+		        30, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		return driver;
 		
@@ -55,7 +55,7 @@ public class SetUp {
 		driver = new ChromeDriver();
 		// Add an implicit wait to the driver
 		driver.manage().timeouts().implicitlyWait(
-		        10, TimeUnit.SECONDS);
+		        30, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		return driver;
 		
