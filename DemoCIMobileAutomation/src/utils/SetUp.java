@@ -29,7 +29,7 @@ public class SetUp {
                         capabilities);
         
         // implicit wait set to 30 due to slowness and timeout issues
-        driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
         
         //Return the driver for other tests
         return driver;   
